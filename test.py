@@ -32,7 +32,7 @@ def recommend_using_pickles(input_text, num_recommendations=10):
     
     return recommended_categories
 
-@application.route('/reccomend', methods=['POST'])
+@application.route('/', methods=['POST'])
 def recommend_endpoint():
     data = request.json
     input_text = data.get('input_text', '')
